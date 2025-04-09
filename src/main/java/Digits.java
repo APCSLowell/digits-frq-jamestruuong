@@ -8,15 +8,15 @@ public class Digits
 	public Digits(int num)
 	{
 		digitList = new ArrayList<Integer>();
-		int nums = num;
+		
 		if(num == 0){
 			digitList.add(0);
 		}
+		int nums = num;
 		while(nums>0){
 			digitList.add(0,nums%10);
 			nums = nums/10;
 		}
-		return digitList;
 		/* to be implemented in part (a) */ 
 	}
 
